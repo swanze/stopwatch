@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        h1 {
+            display: inline-block;
+            width: 100px;
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            transition-duration: 200ms;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <h1>Stopwatch</h1>
+    <hr>
+    <div class="xyz">
+        <h1 id="min">0</h1>
+        <h1>:</h1>
+        <h1 id="sec">0</h1>
+        <h1>:</h1>
+        <h1 id="msec">0</h1>
+        <br><br>
+        <hr>
+        <div class="abc">
+            <button id="a" onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
